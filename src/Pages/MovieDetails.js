@@ -3,7 +3,7 @@ export default function MovieDetails({ selectedMovie }) {
     <div className="movie-details">
       <img src={selectedMovie.Poster} alt="Poster" className="movie-img" />
       <section>
-        <h2>{selectedMovie.Title}</h2>
+        <h2 className="movie-title">{selectedMovie.Title}</h2>
         <h4>
           {selectedMovie.Rated}, {selectedMovie.Year}, {selectedMovie.Runtime}
           <br />
@@ -20,7 +20,7 @@ export default function MovieDetails({ selectedMovie }) {
           Cast: <span className="italic">{selectedMovie.Actors}</span>
         </h4>
         <h3>Plot</h3>
-        <p>{selectedMovie.Plot}</p>
+        <p className="description">{selectedMovie.Plot}</p>
       </section>
     </div>
   );
