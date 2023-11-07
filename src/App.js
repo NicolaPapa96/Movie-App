@@ -16,7 +16,7 @@ function App() {
   // ottenere i dati dall'api in base a cosa si è inserito nell'input
   useEffect(() => {
     fetch(
-      `http://www.omdbapi.com/?apikey=f3492a76&s=${search}&type=movie&plot=short`
+      `https://www.omdbapi.com/?apikey=f3492a76&s=${search}&type=movie&plot=short`
     )
       .then((response) => response.json())
       .then((data) => setMovies(data.Search));
